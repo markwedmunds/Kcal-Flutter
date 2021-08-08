@@ -20,7 +20,8 @@ MaterialColor createMaterialColor(Color color) {
   return MaterialColor(color.value, swatch);
 }
 
-double calculateLineHeight(double fontSize, double lineHeight) {
+/// Calculates the relative line height from [fontSize] and [lineHeight].
+double calculateRelativeLineHeight(double fontSize, double lineHeight) {
   return (1 / fontSize) * lineHeight;
 }
 
@@ -48,7 +49,7 @@ final kSecondaryColorMaterial = createMaterialColor(kSecondaryColor);
 final kHeading1 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 36.0,
-  height: calculateLineHeight(36.0, 46.0),
+  height: calculateRelativeLineHeight(36.0, 46.0),
   letterSpacing: -1.6,
   fontWeight: FontWeight.w500,
   color: kSecondaryColorMaterial.shade900,
@@ -57,7 +58,7 @@ final kHeading1 = TextStyle(
 final kHeading2 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 24.0,
-  height: calculateLineHeight(24.0, 34.0),
+  height: calculateRelativeLineHeight(24.0, 34.0),
   letterSpacing: -0.8,
   fontWeight: FontWeight.w500,
   color: kSecondaryColorMaterial.shade900,
@@ -66,7 +67,7 @@ final kHeading2 = TextStyle(
 final kHeading3 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 22.0,
-  height: calculateLineHeight(22.0, 32.0),
+  height: calculateRelativeLineHeight(22.0, 32.0),
   letterSpacing: -0.4,
   fontWeight: FontWeight.w500,
   color: kSecondaryColorMaterial.shade900,
@@ -75,7 +76,7 @@ final kHeading3 = TextStyle(
 final kHeading4 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 18.0,
-  height: calculateLineHeight(18.0, 28.0),
+  height: calculateRelativeLineHeight(18.0, 28.0),
   letterSpacing: -0.4,
   fontWeight: FontWeight.w500,
   color: kSecondaryColorMaterial.shade900,
@@ -84,7 +85,7 @@ final kHeading4 = TextStyle(
 final kHeading5 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 16.0,
-  height: calculateLineHeight(16.0, 26.0),
+  height: calculateRelativeLineHeight(16.0, 26.0),
   letterSpacing: -0.36,
   fontWeight: FontWeight.w500,
   color: kSecondaryColorMaterial.shade900,
@@ -93,7 +94,7 @@ final kHeading5 = TextStyle(
 final kHeading6 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 14.0,
-  height: calculateLineHeight(14.0, 24.0),
+  height: calculateRelativeLineHeight(14.0, 24.0),
   letterSpacing: -0.3,
   fontWeight: FontWeight.w500,
   color: kSecondaryColorMaterial.shade900,
@@ -102,7 +103,7 @@ final kHeading6 = TextStyle(
 final kParagraph1 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 18.0,
-  height: calculateLineHeight(18.0, 28.0),
+  height: calculateRelativeLineHeight(18.0, 28.0),
   letterSpacing: -0.2,
   fontWeight: FontWeight.w400,
   color: kSecondaryColorMaterial.shade900,
@@ -115,7 +116,7 @@ final kParagraph1SemiBold = kParagraph1.copyWith(
 final kParagraph2 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 16.0,
-  height: calculateLineHeight(16.0, 26.0),
+  height: calculateRelativeLineHeight(16.0, 26.0),
   letterSpacing: -0.1,
   fontWeight: FontWeight.w400,
   color: kSecondaryColorMaterial.shade900,
@@ -128,7 +129,7 @@ final kParagraph2SemiBold = kParagraph2.copyWith(
 final kParagraph3 = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 14.0,
-  height: calculateLineHeight(14.0, 24.0),
+  height: calculateRelativeLineHeight(14.0, 24.0),
   fontWeight: FontWeight.w400,
   color: kSecondaryColorMaterial.shade900,
 );
@@ -140,7 +141,7 @@ final kParagraph3SemiBold = kParagraph3.copyWith(
 final kButtonText = TextStyle(
   fontFamily: 'Work Sans',
   fontSize: 24.0,
-  height: calculateLineHeight(24.0, 34.0),
+  height: calculateRelativeLineHeight(24.0, 34.0),
   letterSpacing: 0.5,
   fontWeight: FontWeight.w600,
   color: kTypographyWhite,
