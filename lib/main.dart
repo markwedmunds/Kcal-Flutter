@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'core/theme.dart';
+import 'splash/presentation/splash_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -62,7 +63,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: MyHomePage(),
+      home: SplashPage(),
     );
   }
 }
@@ -72,7 +73,12 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('kcal'),
+        title: Text(
+          'kcal',
+          style: kHeading3.copyWith(
+            color: kTypographyWhite,
+          ),
+        ),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),

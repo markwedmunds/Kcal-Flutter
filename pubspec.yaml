@@ -49,6 +49,9 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
+  assets:
+    - assets/
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 
@@ -63,11 +66,11 @@ flutter:
   fonts:
     - family: Work Sans
       fonts:
-        - asset: assets/fonts/WorkSans-Regular.ttf
+        - asset: fonts/WorkSans-Regular.ttf
           weight: 400
-        - asset: assets/fonts/WorkSans-Medium.ttf
+        - asset: fonts/WorkSans-Medium.ttf
           weight: 500
-        - asset: assets/fonts/WorkSans-SemiBold.ttf
+        - asset: fonts/WorkSans-SemiBold.ttf
           weight: 600
   
   # For details regarding fonts from package dependencies,
